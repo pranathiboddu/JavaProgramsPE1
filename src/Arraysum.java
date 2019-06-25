@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Arraysum{
+public class Arraysum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt(); // taking input how many elements should be there in array
@@ -14,27 +14,26 @@ public class Arraysum{
         Scanner sc = new Scanner(System.in);
         int count = 0;
         int array[] = new int[number]; //initializing array
-        for (int i = 0; i < number; i++)  // reading array
-        {
+        try {
+            for (int i = 0; i < number; i++)  // reading array
+            {
 
-            array[i] = sc.nextInt();
-        }
-
+                array[i] = sc.nextInt();
+            }
             for (int i = 0; i < number; i++) {
 
-                if (array[i] == (int) array[i]) // checking integer value or not
+                if (array[i] == (Integer.valueOf(array[i])))// checking integer value or not
                 {
                     count = count + array[i];
                 }
-                else
-                    {
-
-                        System.out.println("error");
-                }
-
             }
             System.out.println(count);
 
         }
+        catch (Exception e) // catching exception
+        {
+            System.out.println("Error , not an integer value");
+        }
 
     }
+}
