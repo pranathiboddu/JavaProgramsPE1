@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class Vowelconsonant {
+public class VowelConsonant {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter String: "); // intialized a string
-        String word = sc.nextLine();
+        String word = scanner.nextLine();
         character(word);
 
     }

@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Palindrome {
     public static void main(String[] args){
 
-        Scanner sc=new Scanner(System.in);
+        Scanner scanner=new Scanner(System.in);
         System.out.println("enter number");
-        long number=sc.nextLong(); // intializing long and reading number
+        long number=scanner.nextLong(); // intializing long and reading number
         palindrome(number);
 
 }

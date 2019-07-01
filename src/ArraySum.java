@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class Arraysum {
+public class ArraySum {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int number = sc.nextInt(); // taking input how many elements should be there in array
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt(); // taking input how many elements should be there in array
         System.out.println("elements are:");
         arraysum(number);
 
@@ -11,14 +11,14 @@ public class Arraysum {
 
 
     public static void arraysum(int number) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int count = 0;
         int array[] = new int[number]; //initializing array
         try {
             for (int i = 0; i < number; i++)  // reading array
             {
 
-                array[i] = sc.nextInt();
+                array[i] = scanner.nextInt();
             }
             for (int i = 0; i < number; i++) {
 

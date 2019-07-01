@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class Definecharacter {
+public class DefineCharacter {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        char ch = sc.next().charAt(0); //getting character for ascii value
+        Scanner scanner = new Scanner(System.in);
+        char ch = scanner.next().charAt(0); //getting character for ascii value
         character(ch);
     }
 

@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Stringiteration {
     public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        String word=sc.nextLine(); // getting string from user
-        int number=sc.nextInt(); // geting number (how many last characters to be iterated)
+        Scanner scanner=new Scanner(System.in);
+        String word=scanner.nextLine(); // getting string from user
+        int number=scanner.nextInt(); // geting number (how many last characters to be iterated)
         System.out.print(word);
         stringiteration(word,number);
 
